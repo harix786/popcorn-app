@@ -7,9 +7,9 @@ App.Controller.Home = function (page) {
         });
     }
 
-    var Scrapper = App.currentScrapper;
+    var Scraper = App.currentScraper;
 
-    var movieCollection = new Scrapper([], {
+    var movieCollection = new Scraper([], {
         keywords: null,
         genre: null,
         page: page

@@ -7,9 +7,9 @@ App.Controller.FilterGenre = function (genre, page) {
         });
     }
 
-    var Scrapper = App.currentScrapper;
+    var Scraper = App.currentScraper;
 
-    var movieCollection = new Scrapper([], {
+    var movieCollection = new Scraper([], {
         keywords: null,
         genre: genre,
         page: page

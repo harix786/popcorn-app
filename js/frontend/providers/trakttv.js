@@ -13,9 +13,9 @@ function MovieCollection(imdbIDs) {
 MovieCollection.prototype.getSummaries = function(callback) {
 	var uri = API_ENDPOINT.clone()
 				.segment([
-					MOVIE_PATH, 
-					'summaries.json', 
-					API_KEY, 
+					MOVIE_PATH,
+					'summaries.json',
+					API_KEY,
 					this.ids.join(','),
 					'full'
 				]);
